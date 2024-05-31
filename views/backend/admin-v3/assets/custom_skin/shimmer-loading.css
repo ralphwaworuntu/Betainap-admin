@@ -1,0 +1,100 @@
+.shimmer h1,
+.shimmer h2,
+.shimmer h3,
+.shimmer h4,
+.shimmer h5,
+.shimmer p,
+.shimmer img,
+.shimmer span,
+.shimmer small,
+.shimmer strong,
+.shimmer figure{
+    visibility: visible;
+    animation : shimmer 2s infinite;
+    background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+    background-size: 1000px 100%;
+    color: transparent !important;
+    border-radius: 2px;
+    border: transparent;
+}
+
+
+.shimmer a{
+    pointer-events: none;
+}
+
+.shimmer img{
+    visibility: hidden;
+}
+
+/*
+Home Horizontal Category Shimmer
+ */
+
+.shimmer i.icon-circle{
+    visibility: visible;
+    animation : shimmer 2s infinite;
+    background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+    background-size: 1000px 100%;
+    color: transparent !important;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+}
+
+.shimmer i.icon-square{
+    visibility: visible;
+    animation : shimmer 2s infinite;
+    background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+    background-size: 1000px 100%;
+    color: transparent !important;
+    border-radius: 2px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+}
+
+
+.shimmer a{
+    display: none;
+}
+
+/*
+Home Horizontal List Shimmer
+ */
+
+.shimmer .strip .item_title{
+    background: linear-gradient(to bottom, transparent 5%, grey 100%) !important;
+}
+
+.shimmer .strip ul li .score{
+    display: none;
+}
+
+
+/*
+Home List Shimmer
+ */
+
+.list_home .shimmer .score{
+    display: none;
+}
+
+.list_home .shimmer em,
+.list_home .shimmer small,
+.list_home .shimmer ul{
+    display: none;
+}
+
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
